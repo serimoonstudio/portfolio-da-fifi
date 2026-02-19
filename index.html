@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serimoon Studio</title>
+
+    <meta name="description" content="Site portfólio de design gráfico e design de K-pop ou kdesign">
+    <meta name="author" content="Fran Porto">
+
+    <meta property="og:image" content="https://pbs.twimg.com/media/HBW_HPBbcAESPSO?format=jpg&name=large">
+    <meta property="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@400;700&family=Lily+Script+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+<style>
+
+
+    #tituloPrincipal {
+        margin: 0; 
+        font-family: 'Lily Script One', system-ui;
+        font-size: clamp(40px, 6vw, 60px);
+        text-align: center;
+        color: rgb(52, 155, 215);
+
+        justify-content:center;
+        white-space:pre;
+        font-size: 2em;
+
+        -webkit-animation:tumblrwobble 4s ease-in-out -.5s infinite;
+    animation:tumblrwobble 4s ease-in-out -.5s infinite
+}
+
+@keyframes tumblrwobble{
+0%  { transform:translateY(5%) skew(3deg) }
+25% { transform:translateY(-5%) }
+50% { transform:translateY(5%) skew(-3deg) }
+75% { transform:translateY(-5%) }
+to { transform:translateY(5%) skew(3deg) }
+}
+
+@-webkit-keyframes tumblrwobble{
+0%  { transform:translateY(5%) skew(3deg) }
+25% { transform:translateY(-5%) }
+50% { transform:translateY(5%) skew(-3deg) }
+75% { transform:translateY(-5%) }
+to { transform:translateY(5%) skew(3deg) }
+}
+
+.wobble:nth-child(4n+2){
+-webkit-animation:tumblrwobble 4s ease-in-out -1s infinite;
+animation:tumblrwobble 4s ease-in-out -1s infinite;
+}
+
+.wobble:nth-child(4n+3){
+-webkit-animation:tumblrwobble 4s ease-in-out -1.5s infinite;
+animation:tumblrwobble 4s ease-in-out -1.5s infinite;
+}
+
+.wobble:nth-child(4n){
+-webkit-animation:tumblrwobble 4s ease-in-out 0s infinite;
+animation:tumblrwobble 4s ease-in-out 0s infinite;
+}
+
+
+@keyframes glow {
+0% { text-shadow: 0 0 15px pink; }
+50% { text-shadow: none; }
+100% { text-shadow: 0 0 15px pink; }
+}
+
+@-webkit-keyframes glow {
+0% { text-shadow: 0 0 15px pink; }
+50% { text-shadow: none; }
+100% { text-shadow: 0 0 15px pink; }
+}
+
+    #descricao {
+
+    font-family: 'Gluten', cursive;
+    font-size: clamp(14px, 2.5vw, 20px);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 60px;
+
+    
+    }
+
+    #portfolio {
+        animation-delay: 0.2s;
+    }
+
+    #sobreMim { 
+        animation-delay: 0.4s;
+        
+    }
+
+    #redesSociais { 
+        animation-delay: 0.6s;
+        }
+
+
+    body {
+        font-family: 'Gluten', cursive;
+        font-weight: 400;
+        font-size: clamp(14px, 1.5vw, 18px);
+        cursor: url("https://kiunlo.neocities.org/cursors/pride/bi_cursor.png") 0 0, auto;
+        background-image: url('https://64.media.tumblr.com/b9a5b762edb81670ce011be6a58e480a/tumblr_inline_mvmuledGjd1qid2nw.png');
+}
+    .hero {
+
+        transition: transform 0.3s ease;
+        animation: fadeIn 1s ease-in;
+
+        width: 95%;
+        margin: 20px auto;
+        height: auto;
+        min-height: 80vh;
+        background: linear-gradient(135deg, #e0f7ff, #f5faff);
+        color:rgb(52, 155, 215);
+        padding: 60px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 20px;
+        border-width:9px;border-style:solid;
+        border-image: url("https://dl.dropbox.com/s/v8iy6a8feyq041p/blue%20ver.png") 8 fill round;         
+    
+        background-size: cover;
+        background-position: center;
+        position: relative;
+}
+
+    @keyframes fadeIn {
+        from { opacity: 0;}
+        to {opacity: 1;}
+}
+
+    .logo {
+        text-align: center;
+}
+
+    .hero:hover  {
+        transform: scale(1.01);
+}
+
+    nav a {
+        color:rgb(52, 155, 215);
+        text-decoration:none;
+        margin: 0 10px;
+        margin-top: 25px;
+        transition: 0.3s;
+}
+
+    nav a:hover {
+        color: hotpink;
+}
+
+
+    html {
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+}
+
+    .secao {
+        width: 95%;
+        margin: 20px auto;
+        height: auto;
+
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(10px);
+        padding: 40px 20px;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+
+        border-radius: 20px;
+        border-width:9px;border-style:solid;
+        border-image: url("https://dl.dropbox.com/s/v8iy6a8feyq041p/blue%20ver.png") 8 fill round;
+
+        text-align: center;
+        opacity: 0;
+        transform:translateY(20px);
+        animation:fadeInUp 0.8s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .secao img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 15px;
+        margin-top: 20px;
+}
+
+    .secao h2 {
+        font-size: 30px;
+        font-weight: 700;
+         color: rgb(52, 155, 215);
+        -webkit-background-clip: text;
+    }
+    .secao p {
+        color: rgb(52, 155, 215);
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+}
+
+    .galeria img {
+        width: 100%;
+        border-radius: 0px;
+        transition: 0.3s;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+    .galeria img:hover {
+        transform: scale(1.05);
+}
+
+    .lightbox {
+        display:none;
+        position: fixed;
+        z-index: 999;
+        padding-top: 50px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height:100%;
+        background-color: rgba(0, 0, 0, 0.9);
+}
+
+    .lightbox-img{
+
+        animation: zoom 0.3s ease;
+    
+        margin:auto;
+        display: block;
+        max-width: 90%;
+        max-height: 80%;
+        border-radius: 0%;
+
+}
+
+    @keyframes zoom {
+        from { transform: scale(0.8); }
+        to { transform: scale(1); }
+}
+
+    .fechar {
+        position: absolute;
+        top: 20px;
+        right: 35px;
+        color: white;
+        font-size: 40px;
+        cursor: pointer;
+}
+
+.cards-habilidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    background: linear-gradient(
+        120deg,
+        rgba(255,255,255,0.4),
+        rgba(255,255,255,0.1)
+    );
+    opacity: 0.3;
+}
+.card {
+    padding: 30px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+
+    transition: 0.4s ease;
+
+     position: relative;
+    overflow: hidden;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: rgb(52, 155, 215);
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(31, 38, 135, 0.25);
+}
+
+.redes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.rede-card {
+    text-decoration: none;
+    color: rgb(52, 155, 215);
+    padding: 30px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+
+    transition: 0.4s ease;
+}
+
+.rede-card span {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.rede-card h3 {
+    margin-bottom: 5px;
+}
+
+.rede-card p {
+    font-size: 14px;
+}
+
+.rede-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(31, 38, 135, 0.25);
+}
+
+    .miniplay {
+        
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+    }
+
+
+#miniplay {
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+
+	width: 19em;
+	height: 9em;
+	font-family: "Inter", serif;
+	background: #f5f5f5;
+	border: 1px solid #d6d6d6;
+	border-radius: 0.625rem;
+	box-shadow: inset 10px 0px 6px -10px #ccc, inset -10px 0px 6px -10px #ccc,
+		inset 0px 10px 6px -10px #fff, inset 0px -10px 6px -10px #ccc;
+	padding: 12px;
+	cursor: move;
+}
+
+.stats {
+	display: flex;
+	align-items: center;
+}
+
+.track-art {
+	width: 3.5em;
+	height: 3.5em;
+	object-fit: cover;
+	border-radius: 4px;
+	-webkit-filter: drop-shadow(0px 0px 1px #aaa);
+	background-size: cover;
+	background-position: center;
+}
+
+.slider_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 12px;
+}
+
+.current-time,
+.total-duration {
+	color: #666;
+	font-family: "Inter", serif;
+	font-size: 12px;
+	padding: 4px;
+}
+
+.seek_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 6px;
+  height: 16px;
+  background: #666;
+	border: 2px solid #f5f5f5;
+	border-radius: 10px;
+}
+
+.seek_slider,
+.volume_slider {
+	width: 100%;
+}
+
+.seek_slider,
+.volume_slider {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	height: 3px;
+	background: #bbb;
+}
+
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+	cursor: pointer;
+}
+
+.now-playing,
+.track-name,
+.track-artist {
+	color: #555;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.3;
+}
+
+.now-playing {
+	display: none;
+}
+
+.bttn {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 14px;
+}
+
+.playpause-track,
+.prev-track,
+.next-track {
+	opacity: 0.5;
+	color: #000;
+	transition: opacity 0.2s;
+}
+
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+	opacity: 0.8;
+}
+
+i.fa-play,
+i.fa-pause,
+.prev-track,
+.next-track {
+	cursor: pointer;
+}
+
+
+
+</style>
+
+</head>
+
+<body id="topo">
+
+<header class="hero">
+    <div class="logo">
+
+        <h1 id="tituloPrincipal">Serimoon Studio</h1>   
+        <p id="descricao"> K-design, Graphic Design, Visual Identity</p>
+
+        <nav>
+            <a href="#topo">Início</a>
+            <a href="#sobreMim">Sobre Mim</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#redesSociais">Redes Sociais</a>
+        
+        </nav>
+    </div>
+    
+</header>
+
+<main>
+
+     <section id="sobreMim" class="secao">
+
+        <div class="cards-habilidades">
+
+            <div class="card">
+                <h3>🎨 Photoshop</h3>
+                <p>Edição, manipulação de imagem e composição digital.</p>
+            </div>
+
+            <div class="card">
+                <h3>🖌 Illustrator</h3>
+                <p>Identidade visual, vetores e design gráfico.</p>
+            </div>
+
+            <div class="card">
+        <h3>💖 K-design</h3>
+        <p>Estética K-pop, colagens, banners e concept visuals.</p>
+    </div>
+        </div>
+        <h2>Sobre Mim</h2>
+
+        <p>
+            Olá! Eu sou a Francielly Porto, também conhecida como Fran ou Fifi. Tenho 23 anos, sou designer e curso Design na UFES (Universidade Federal do Espírito Santo).
+        </p>
+        <p>
+             Fiz estágio na MULTIVIX, na área de Marketing Corporativo, na internet gosto de fazer arte com base nos meus gostos e hobbies como área do K-pop, jogos, séries, etc.
+        </p>
+
+        <p>
+             Você pode dar uma olhada no meu Portfólio!
+        </p>
+        </section>
+
+    <section id="portfolio" class="secao">
+        <h2>Portfólio</h2>
+        <p>Alguns dos meus trabalhos</p>
+
+        <div class="galeria">
+            <img src="imagens/notcuteanymore_banner2.png" alt="arte gráfica digital de colagem estilo alternativo do grupo de k-pop ILLIT, na imagem há cores verde, rosa choque, branco e preto.">
+            <img src="imagens/jeongyeon-edit.png" alt="arte gráfica digital de manipulação de imagem usando a cor roxa em tons diferentes como roxo claro e escuro, na imagem a Jeongyeon, integrante do grupo aparece grande no centro enquanto a imagem do grupo completo aparece embaixo menor.">
+            <img src="imagens/poster-enhypen.png" alt="arte gráfica digital de manipulação de imagem do grupo Enhypen com todos os integrantes, a imagem tem um tom de azul brilhante.">
+            <img src="imagens/moka-moran.png" alt="arte gráfica digital da idol Moka do grupo ILLIT com o conceito de morango, tem as cores vermelho, verde, branco e um amarelo creme.">
+            <img src="imagens/banner-design.png" alt="arte gráfica digital do grupo BTS com a imagem deles sem saturação, deixando eles cinzas com um fundo branco e detalhes em vermelho para promoção do album Arirang.">
+            <img src="imagens/banner-happy-birthday-jhope.png" alt="arte gráfica digital do idol J-hope ou Jung Hoseok do grupo BTS arte de cor branca, amarelo e azul, arte de aniversário do idol.">
+        </div>
+
+    </section>
+
+    <section id="redesSociais" class="secao">
+        <h2>Redes Sociais</h2>
+        <p>Onde você pode me encontrar?</p>
+
+         <div class="redes-container">
+
+        <a href="https://www.instagram.com/serimoonstudio/" target="_blank" rel="noopener noreferrer" class="rede-card">
+            <span>📸</span>
+            <h3>Instagram</h3>
+            <p>@serimoonstudio</p>
+        </a>
+
+        <a href="https://x.com/serimoonstudio" target="_blank" rel="noopener noreferrer" class="rede-card">
+            <span>🐦</span>
+            <h3>Twitter / X</h3>
+            <p>@serimoonstudio</p>
+        </a>
+
+          <a href="serimoonstudio@gmail.com" class="rede-card">
+        <span>📩</span>
+        <h3>Email</h3>
+        <p>Entre em contato</p> </a>
+        </div>
+
+    
+    </section>
+
+
+</main>
+    
+
+<div id="lightbox" class="lightbox">
+
+    <span class="fechar">&times;</span>
+    <img class="lightbox-img" id="lightboxImg">
+</div>
+
+
+<div id="miniplay">
+
+		<div class="stats">
+			<div class="track-art"></div>
+			<div class="now-playing">PLAYING x OF y</div>
+			<div style="display:flex;flex-direction:column;padding:10px 0 10px 10px;">
+				<div class="track-name">Track Name</div>
+				<div style="font-size:8pt;color:grey;" class="track-artist">Track Artist</div>
+			</div>
+		</div>
+
+		<div class="slider_container">
+			<div class="current-time">00:00</div>
+			<input type="range" min="1" max="100" value="0" class="seek_slider">
+			<div class="total-duration">00:00</div>
+		</div>
+
+		<div class="bttn">
+			<div class="prev-track">
+				<?xml version="1.0" ?><svg height="28" viewBox="0 0 512 512" width="28" xmlns="http://www.w3.org/2000/svg">
+					<title />
+					<path d="M30.71,229.47l188.87-113a30.54,30.54,0,0,1,31.09-.39,33.74,33.74,0,0,1,16.76,29.47V224.6L448.15,116.44a30.54,30.54,0,0,1,31.09-.39A33.74,33.74,0,0,1,496,145.52v221A33.73,33.73,0,0,1,479.24,396a30.54,30.54,0,0,1-31.09-.39L267.43,287.4v79.08A33.73,33.73,0,0,1,250.67,396a30.54,30.54,0,0,1-31.09-.39l-188.87-113a31.27,31.27,0,0,1,0-53Z" />
+				</svg>
+			</div>
+			<div class="playpause-track">
+				<i class="fa fa-play fa-lg"></i>
+			</div>
+			<div class="next-track">
+				<?xml version="1.0" ?><svg height="28" viewBox="0 0 512 512" width="28" xmlns="http://www.w3.org/2000/svg">
+					<title />
+					<path d="M481.29,229.47l-188.87-113a30.54,30.54,0,0,0-31.09-.39,33.74,33.74,0,0,0-16.76,29.47V224.6L63.85,116.44a30.54,30.54,0,0,0-31.09-.39A33.74,33.74,0,0,0,16,145.52v221A33.74,33.74,0,0,0,32.76,396a30.54,30.54,0,0,0,31.09-.39L244.57,287.4v79.08A33.74,33.74,0,0,0,261.33,396a30.54,30.54,0,0,0,31.09-.39l188.87-113a31.27,31.27,0,0,0,0-53Z" />
+				</svg>
+			</div>
+
+		</div>
+
+
+<script>
+const imagens = document.querySelectorAll(".galeria img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const fechar = document.querySelector(".fechar");
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        lightbox.style.display = "none";
+    }
+});
+
+imagens.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "block";
+        lightboxImg.src = img.src;
+    });
+});
+
+fechar.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+
+lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+        lightbox.style.display = "none";
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+// mini player //
+
+
+
+let now_playing = document.querySelector(".now-playing");
+let track_art = document.querySelector(".track-art");
+let track_name = document.querySelector(".track-name");
+let track_artist = document.querySelector(".track-artist");
+let playpause_btn = document.querySelector(".playpause-track");
+let next_btn = document.querySelector(".next-track");
+let prev_btn = document.querySelector(".prev-track");
+
+playpause_btn.addEventListener("click", playpauseTrack);
+next_btn.addEventListener("click", nextTrack);
+prev_btn.addEventListener("click", prevTrack);
+
+let seek_slider = document.querySelector(".seek_slider");
+
+seek_slider.addEventListener("input", seekTo);
+
+let curr_time = document.querySelector(".current-time");
+let total_duration = document.querySelector(".total-duration");
+// Specify globally used values
+let track_index = 0;
+let isPlaying = false;
+let updateTimer;
+// Create the audio element for the player
+let curr_track = document.createElement("audio");
+// Define the list of tracks that have to be played
+
+let track_list = [
+
+    {
+		name: "Like Crazy",
+		artist: "JIMIN - FACE",
+		image: "https://akamai.sscdn.co/letras/360x360/albuns/8/b/3/6/1725401679659460.jpg",
+		path: "https://files.catbox.moe/xtz7zx.mp3"
+	},
+
+     {
+		name: "NOT CUTE ANYMORE",
+		artist: "ILLIT - NOT CUTE ANYMORE",
+		image: "https://i.ytimg.com/vi/9Y-GpyEhAkg/maxresdefault.jpg",
+		path: "https://files.catbox.moe/n0gexd.mp3"
+	},
+
+     {
+		name: "Domodachi",
+		artist: "RM - Right Place Wrong Person",
+		image: "https://akamai.sscdn.co/letras/360x360/albuns/e/6/1/e/2231741716568677.jpg",
+		path: "https://files.catbox.moe/kyqkl3.mp3"
+	},
+
+    {
+		name: "Season of Memories",
+		artist: "GFRIEND - Season of Memories",
+		image:
+			"https://64.media.tumblr.com/257022417e60949df9482eafb52e5ace/823f4dd47674e5f7-3d/s2048x3072/6d11aa3c11b135bccaf8f4ccd42a6abdcfced8cc.jpg",
+		path: "https://files.catbox.moe/vc4p9o.mp3"
+	},
+
+	{
+		name: "HIGH",
+		artist: "Seori - HIGH",
+		image:
+			"https://64.media.tumblr.com/1c56b4b76b0736f0833a4e43d174ed66/823f4dd47674e5f7-b5/s2048x3072/4f2138ddeb3a4aa98887b8b55aa27fcda7fc3969.jpg",
+		path: "https://files.catbox.moe/ddh7c5.mp3"
+	}
+];
+
+// //
+
+function loadTrack(track_index) {
+	// Clear the previous seek timer
+	clearInterval(updateTimer);
+	resetValues();
+	// Load a new track
+	curr_track.src = track_list[track_index].path;
+	curr_track.load();
+	// Update details of the track
+	track_art.style.backgroundImage = "url(" + track_list[track_index].image + ")";
+	track_name.textContent = track_list[track_index].name;
+	track_artist.textContent = track_list[track_index].artist;
+	now_playing.textContent =
+		"PLAYING " + (track_index + 1) + " OF " + track_list.length;
+	// Set an interval of 1000 milliseconds
+	// for updating the seek slider
+	updateTimer = setInterval(seekUpdate, 1000);
+	// Move to the next track if the current finishes playing
+	// using the 'ended' event
+	curr_track.addEventListener("ended", nextTrack); }
+
+// Function to reset all values to their default
+function resetValues() {
+	curr_time.textContent = "00:00";
+	total_duration.textContent = "00:00";
+	seek_slider.value = 0;
+}
+
+function playpauseTrack() {
+	// Switch between playing and pausing
+	// depending on the current state
+	if (!isPlaying) playTrack();
+	else pauseTrack();
+}
+
+function playTrack() {
+	// Play the loaded track
+	curr_track.play();
+	isPlaying = true;
+	// Replace icon with the pause icon
+	playpause_btn.innerHTML = '<i class="fa fa-pause fa-lg"></i>';
+}
+
+function pauseTrack() {
+	// Pause the loaded track
+	curr_track.pause();
+	isPlaying = false;
+	// Replace icon with the play icon
+	playpause_btn.innerHTML = '<i class="fa fa-play fa-lg"></i>';
+}
+
+function nextTrack() {
+	// Go back to the first track if the
+	// current one is the last in the track list
+	if (track_index < track_list.length - 1) track_index += 1;
+	else track_index = 0;
+	// Load and play the new track
+	loadTrack(track_index);
+	playTrack();
+}
+
+function prevTrack() {
+	// Go back to the last track if the
+	// current one is the first in the track list
+	if (track_index > 0) track_index -= 1;
+	else track_index = track_list.length - 1;
+	// Load and play the new track
+	loadTrack(track_index);
+	playTrack();
+}
+
+function seekTo() {
+	// Calculate the seek position by the
+	// percentage of the seek slider
+	// and get the relative duration to the track
+	let seekto = curr_track.duration * (seek_slider.value / 100);
+	// Set the current track position to the calculated seek position
+	curr_track.currentTime = seekto;
+}
+
+function seekUpdate() {
+	let seekPosition = 0;
+	// Check if the current track duration is a legible number
+	if (!isNaN(curr_track.duration)) {
+		seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+		seek_slider.value = seekPosition;
+		// Calculate the time left and the total duration
+		let currentMinutes = Math.floor(curr_track.currentTime / 60);
+		let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+		let durationMinutes = Math.floor(curr_track.duration / 60);
+		let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+		// Add a zero to the single digit time values
+		if (currentSeconds < 10) {
+			currentSeconds = "0" + currentSeconds;
+		}
+		if (durationSeconds < 10) {
+			durationSeconds = "0" + durationSeconds;
+		}
+		if (currentMinutes < 10) {
+			currentMinutes = "0" + currentMinutes;
+		}
+		if (durationMinutes < 10) {
+			durationMinutes = "0" + durationMinutes;
+		}
+		// Display the updated duration
+		curr_time.textContent = currentMinutes + ":" + currentSeconds;
+		total_duration.textContent = durationMinutes + ":" + durationSeconds;
+	}
+}
+// Load the first track in the tracklist
+loadTrack(track_index);
+});
+
+
+
+</script>
+
+
+</body>
+</html>
